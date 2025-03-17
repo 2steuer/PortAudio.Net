@@ -4,7 +4,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>7.3</LangVersion>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MPL-2.0 AND MIT</PackageLicenseExpression>
     <Copyright><![CDATA[This package contains software from multiple projects:
@@ -27,5 +27,11 @@ Source code for PortAudio is available at portaudio.com.]]></Copyright>
       <PackagePath>%(Identity)</PackagePath>
       <Pack>true</Pack>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="org.k2fsa.portaudio.runtime.linux-x64" Version="1.0.4" />
+    <PackageReference Include="org.k2fsa.portaudio.runtime.osx-x64"   Version="1.0.4" />
+    <PackageReference Include="org.k2fsa.portaudio.runtime.osx-arm64" Version="1.0.4" />
+    <PackageReference Include="org.k2fsa.portaudio.runtime.win-x64"   Version="1.0.4" />
   </ItemGroup>
 </Project>
